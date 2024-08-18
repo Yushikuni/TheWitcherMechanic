@@ -2,8 +2,8 @@
 
 
 #include "Medailon.h"
-/*#include "Enemy.h"
-#include "MagicSource.h"*/
+#include "Enemy.h"
+#include "Magic.h"
 
 // Sets default values
 AMedailon::AMedailon()
@@ -12,7 +12,7 @@ AMedailon::AMedailon()
 	PrimaryActorTick.bCanEverTick = true;
 
 	//Binging overlap events
-	//OnActorBeginOverlap.AddDynamic(this, &AMedailon::OnOverlapBegin);
+	OnActorBeginOverlap.AddDynamic(this, &AMedailon::OnOverlapBegin);
 
 }
 
@@ -21,11 +21,11 @@ AMedailon::AMedailon()
 void AMedailon::OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor)
 {
 	// Check if the overlapped actor is an enemy or magic source
-	/*if (OtherActor->IsA(AEnemy::StaticClass()) || OtherActor->IsA(AMagicSource::StaticClass()))
+	if (OtherActor->IsA(AEnemy::StaticClass()) || OtherActor->IsA(AMagic::StaticClass()))
 	{
 		// Trigger medallion reaction (vibration, animation, sound, etc.)
 		ReactToMagicOrEnemies();
-	}*/
+	}
 }
 
 //Reacting for Magic and enemies
