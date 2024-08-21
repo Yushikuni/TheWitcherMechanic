@@ -27,4 +27,16 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	// Add medailon to class
+	UPROPERTY(EditAnywhere, Category = "Medailon")
+	TSubclassOf<class AMedailon> TheWitcherMedailon;
+
+	// Reference to the medailon component
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	UStaticMeshComponent* MedailonComponent;
+
+	// Reference to the medailon mesh
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Medailon")
+	UStaticMesh* MedailonMesh;
+
 };
