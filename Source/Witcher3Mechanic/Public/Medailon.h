@@ -12,6 +12,10 @@ class WITCHER3MECHANIC_API AMedailon : public AActor
 	GENERATED_BODY()
 	
 public:	
+	//Making a detection radius
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Medailon")
+	float DetectionRadius = 5.0f;
+	
 	// Sets default values for this actor's properties
 	AMedailon();
 
@@ -25,9 +29,8 @@ public:
 	
 	// Custom overlap function
 	UFUNCTION()
-	void OnOverlapBegin(AActor* OverlappedActor, AActor* OtherActor);
+	void DetectNearbyThreats();
 
-
-	// Function to handle reaction to enemies or magic sources
-	void ReactToMagicOrEnemies();
+	void DetectNearbyMagic();
+	void TriggerMedallionEffect();
 };
