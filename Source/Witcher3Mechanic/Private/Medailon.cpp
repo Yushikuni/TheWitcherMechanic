@@ -55,7 +55,7 @@ void AMedailon::DetectNearbyThreats()
                 if(OverlappedActor->ActorHasTag("Enemy"))
                 // Spustit efekt medailonu
                 TriggerMedallionEffect();
-                //break;
+                break;
             }
         }
     }
