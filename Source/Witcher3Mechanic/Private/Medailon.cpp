@@ -19,6 +19,7 @@ AMedailon::AMedailon()
 void AMedailon::BeginPlay()
 {
 	Super::BeginPlay();
+
 }
 
 // Called every frame
@@ -49,7 +50,7 @@ void AMedailon::DetectNearbyThreats()
         for (auto& Result : HitResults)
         {
             AActor* OverlappedActor = Result.GetActor();
-            if (OverlappedActor)
+            if (OverlappedActor && OverlappedActor->ActorHasTag("Enemy"))
             {
                 // Spustit efekt medailonu
                 TriggerMedallionEffect();
@@ -62,7 +63,7 @@ void AMedailon::DetectNearbyThreats()
 void AMedailon::TriggerMedallionEffect()
 {
     // Sem vlož logiku vibrace, zvuk, nebo vizuální efekt
-    UE_LOG(LogTemp, Warning, TEXT("Medallion Detects a Threat!"));
+    UE_LOG(LogTemp, Error, TEXT("Medallion Detects a Threat!"));
 
     // Mùžeš pøidat Particle system nebo haptickou zpìtnou vazbu
 }
