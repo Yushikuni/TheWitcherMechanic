@@ -50,11 +50,12 @@ void AMedailon::DetectNearbyThreats()
         for (auto& Result : HitResults)
         {
             AActor* OverlappedActor = Result.GetActor();
-            if (OverlappedActor && OverlappedActor->ActorHasTag("Enemy"))
+            if (OverlappedActor)
             {
+                if(OverlappedActor->ActorHasTag("Enemy"))
                 // Spustit efekt medailonu
                 TriggerMedallionEffect();
-                break;
+                //break;
             }
         }
     }
