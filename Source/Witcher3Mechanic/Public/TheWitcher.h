@@ -31,12 +31,8 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Medailon")
 	TSubclassOf<class AMedailon> TheWitcherMedailon;
 
-	// Reference to the medailon component
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	UStaticMeshComponent* MedailonComponent;
-
-	// Reference to the medailon mesh
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Medailon")
-	UStaticMesh* MedailonMesh;
+	// Reference to the spawned medailon actor
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Medailon")
+	AMedailon* SpawnedMedailon;
 
 };

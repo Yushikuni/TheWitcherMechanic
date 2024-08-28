@@ -52,14 +52,18 @@ void AMedailon::DetectNearbyThreats()
             AActor* OverlappedActor = Result.GetActor();
             if (OverlappedActor)
             {
-                if(OverlappedActor->ActorHasTag("Enemy"))
-                // Spustit efekt medailonu
-                TriggerMedallionEffect();
-                break;
+                if (OverlappedActor->ActorHasTag("Enemy"))
+                {
+                    // Spustit efekt medailonu
+                    TriggerMedallionEffect();
+                    break;
+                }                
             }
         }
     }
 }
+// Own category for loging
+DEFINE_LOG_CATEGORY_STATIC(LogMedailon, Log, All);
 
 void AMedailon::TriggerMedallionEffect()
 {
