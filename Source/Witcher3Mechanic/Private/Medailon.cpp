@@ -45,6 +45,8 @@ void AMedailon::DetectNearbyThreats()
         Sphere
     );
 
+    DrawDebugSphere(GetWorld(), MedallionLocation, DetectionRadius, 50, FColor::Red, false, 1.0f); // Debugovací koule
+
     if (bIsOverlapping)
     {
         for (auto& Result : HitResults)
