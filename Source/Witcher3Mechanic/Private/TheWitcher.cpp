@@ -2,7 +2,6 @@
 
 
 #include "TheWitcher.h"
-#include "Medailon.h"
 
 // Sets default values
 ATheWitcher::ATheWitcher()

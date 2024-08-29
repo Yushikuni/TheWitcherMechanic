@@ -6,16 +6,18 @@
 #include "GameFramework/Actor.h"
 #include "Medailon.generated.h"
 
+class ATheWitcher;
+
 UCLASS()
 class WITCHER3MECHANIC_API AMedailon : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	//Making a detection radius
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Medailon")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Medailon")
 	float DetectionRadius = 5.0f;
-	
+
 	// Sets default values for this actor's properties
 	AMedailon();
 
@@ -23,14 +25,17 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
+
 	// Custom overlap function
 	UFUNCTION()
 	void DetectNearbyThreats();
 
-	void DetectNearbyMagic();
+	UPROPERTY()
+	ATheWitcher* OwningWitcher;
+
+	//void DetectNearbyMagic();
 	void TriggerMedallionEffect();
 };

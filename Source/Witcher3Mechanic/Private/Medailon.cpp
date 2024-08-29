@@ -2,6 +2,7 @@
 
 
 #include "Medailon.h"
+#include "TheWitcher.h"
 #include "GameFramework/Actor.h"
 #include "Engine/World.h"
 #include "DrawDebugHelpers.h"
@@ -19,7 +20,7 @@ AMedailon::AMedailon()
 void AMedailon::BeginPlay()
 {
 	Super::BeginPlay();
-
+    OwningWitcher = Cast<ATheWitcher>(GetOwner());
 }
 
 // Called every frame
