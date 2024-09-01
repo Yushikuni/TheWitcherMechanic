@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Enemy.h"
+#include "Magic.h"
 #include "Medailon.generated.h"
 
 class ATheWitcher;

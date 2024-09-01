@@ -60,7 +60,12 @@ void AMedailon::DetectNearbyThreats()
                     // Spustit efekt medailonu
                     TriggerMedallionEffect();
                     break;
-                }                
+                } 
+                if (OverlappedActor->ActorHasTag("Magic"))
+                {
+                    TriggerMedallionEffect();
+                    break;
+                }
             }
         }
     }
