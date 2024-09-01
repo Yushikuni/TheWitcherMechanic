@@ -10,3 +10,6 @@ This medallion is an actor responsible for telling the player that the enemy is 
 
 base on The Witcher 1 game there is some additional info about it:
 - Press "y" on **qwertz** or "z" on **qwerty** keyboard to change a setting between alerting enemy is close or magic
+
+
+Here is design document:
