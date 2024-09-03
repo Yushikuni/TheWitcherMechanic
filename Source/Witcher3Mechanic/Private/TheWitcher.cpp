@@ -51,7 +51,7 @@ void ATheWitcher::ActivateMedailon()
 {
     if (SpawnedMedailon)
     {
-        // Aktivace nìjaké funkce na Medailonu
+        // Aktivace funkce na Medailonu
         SpawnedMedailon->TriggerMedallionEffect();
     }
 }
