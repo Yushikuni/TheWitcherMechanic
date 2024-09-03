@@ -13,3 +13,6 @@ base on The Witcher 1 game there is some additional info about it:
 
 
 Here is design document:
+
+Diagram picture:
+[![Diagram.png]](https://github.com/Yushikuni/TheWitcherMechanic/blob/main/Diagram.png)
