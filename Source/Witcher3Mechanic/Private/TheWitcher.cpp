@@ -44,4 +44,14 @@ void ATheWitcher::Tick(float DeltaTime)
 void ATheWitcher::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+    PlayerInputComponent->BindKey(EKeys::Y, IE_Pressed, this, &ATheWitcher::ActivateMedailon);
+}
+
+void ATheWitcher::ActivateMedailon()
+{
+    if (SpawnedMedailon)
+    {
+        // Aktivace nìjaké funkce na Medailonu
+        SpawnedMedailon->TriggerMedallionEffect();
+    }
 }

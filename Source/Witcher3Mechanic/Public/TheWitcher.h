@@ -35,4 +35,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Medailon")
 	AMedailon* SpawnedMedailon;
 
+	void ActivateMedailon();
+
 };
