@@ -15,7 +15,7 @@ void ATheWitcher::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (TheWitcherMedailon != nullptr)
+	if (TheWitcherMedailon)
 	{
         FActorSpawnParameters SpawnParams;
         SpawnParams.Owner = this;
@@ -28,6 +28,7 @@ void ATheWitcher::BeginPlay()
         if (Medailon)
         {
             Medailon->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+            SpawnedMedailon = Medailon;
         }
 	}
 	
