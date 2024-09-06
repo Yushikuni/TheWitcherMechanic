@@ -73,6 +73,11 @@ void AMedailon::DetectNearbyThreats()
 // Own category for loging
 DEFINE_LOG_CATEGORY_STATIC(LogMedailon, Log, All);
 
+void AMedailon::TriggerMedallionEffect()
+{
+    UE_LOG(LogTemp, Fatal, TEXT("Medallion Detects a Threat!"));
+}
+
 void AMedailon::TriggerMedallionEffectEnemy()
 {
     // Sem vlož logiku vibrace, zvuk, nebo vizuální efekt
