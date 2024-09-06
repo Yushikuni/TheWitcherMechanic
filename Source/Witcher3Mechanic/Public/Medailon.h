@@ -31,13 +31,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	// Custom overlap function
-	UFUNCTION()
-	void DetectNearbyThreats();
-
 	UPROPERTY()
 	ATheWitcher* OwningWitcher;
 
-	//void DetectNearbyMagic();
-	void TriggerMedallionEffect();
+	void TriggerMedallionEffectEnemy();
+	void TriggerMedallionEffectMagic();
 };

@@ -58,12 +58,12 @@ void AMedailon::DetectNearbyThreats()
                 if (OverlappedActor->ActorHasTag("Enemy"))
                 {
                     // Spustit efekt medailonu
-                    TriggerMedallionEffect();
+                    TriggerMedallionEffectEnemy();
                     break;
                 } 
                 if (OverlappedActor->ActorHasTag("Magic"))
                 {
-                    TriggerMedallionEffect();
+                    TriggerMedallionEffectMagic();
                     break;
                 }
             }
@@ -73,10 +73,16 @@ void AMedailon::DetectNearbyThreats()
 // Own category for loging
 DEFINE_LOG_CATEGORY_STATIC(LogMedailon, Log, All);
 
-void AMedailon::TriggerMedallionEffect()
+void AMedailon::TriggerMedallionEffectEnemy()
 {
     // Sem vlož logiku vibrace, zvuk, nebo vizuální efekt
-    UE_LOG(LogTemp, Error, TEXT("Medallion Detects a Threat!"));
+    UE_LOG(LogTemp, Error, TEXT("Medallion Detects a Enemy Threat!"));
 
     // Mùžeš pøidat Particle system nebo haptickou zpìtnou vazbu
+}
+
+void AMedailon::TriggerMedallionEffectMagic()
+{
+    UE_LOG(LogTemp, Warning, TEXT("Medallion Detects a MAGIC!"));
+
 }
