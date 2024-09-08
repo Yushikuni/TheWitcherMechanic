@@ -89,5 +89,4 @@ void AMedailon::TriggerMedallionEffectEnemy()
 void AMedailon::TriggerMedallionEffectMagic()
 {
     UE_LOG(LogTemp, Warning, TEXT("Medallion Detects a MAGIC!"));
-
 }
