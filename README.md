@@ -1,18 +1,37 @@
-# TheWitcherMechanic
+# The Witcher Mechanic
 
-### Overview
-This project is an Unreal Engine 5.4 game mechanic inspired by the Witcher series. The mechanic involves a Witcher's Medallion that reacts (vibrates, animates, or triggers a sound) when the character is near enemies or sources of magic. The game mechanic is built in C++ and can be integrated into various gameplay systems.
+## Project Description
+This project showcases a dynamic game mechanic inspired by "The Witcher" series. It includes a reactive Witcher Medallion that detects nearby enemies or magic within the game environment. This mechanic is designed using Unreal Engine 5, demonstrating both Blueprints and C++ implementations.
 
-#### about medaillon
+## Installation
+To get started with this project:
+1. Ensure you have Unreal Engine 5 installed on your system. You can download it from the [Epic Games Launcher](https://www.unrealengine.com/en-US/download).
+2. Clone the repository to your local machine: ``git clone https://github.com/Yushikuni/TheWitcherMechanic.git``
+3. Open the project in Unreal Engine 5 by navigating to the project folder and opening the `.uproject` file.
 
-This medallion is an actor responsible for telling the player that the enemy is close or there are some footprints in the nearest area.
+## Usage
+- The medallion can be triggered by pressing the "Y" key, which toggles its sensitivity settings between detecting enemies and detecting magical objects.
+- To integrate this mechanic into your own game, reference the `AMedailon` and `ATheWitcher` classes in your game scripts or blueprints.
 
+## Contributing
+Contributions are welcome! Please fork the project, create a new branch for your contribution, and submit a pull request.
 
-base on The Witcher 1 game there is some additional info about it:
-- Press "y" on **qwertz** or "z" on **qwerty** keyboard to change a setting between alerting enemy is close or magic
+## License
+This project is licensed under the GNU General Public License v3.0. For more details, see the [LICENSE](LICENSE) file in the repository.
 
+## Contact
+For any queries or discussions regarding the project, feel free to open an issue in the repository or contact [me](mailto:your-email@example.com).
 
-Here is design document:
+## Acknowledgments
+- Special thanks to the Unreal Engine community for guidance and resources.
+- Hat tip to anyone who's code was used as inspiration.
 
-Diagram picture:
-![Diagram.png](https://github.com/user-attachments/assets/02d86ac0-3932-4b51-b7be-0ad36f82106a)
+## Screenshots and Demos
+![Medallion Effect](screenshot1.png)  
+*The Witcher Medallion in action, detecting magic.*
+<!--
+![HUD Setup](screenshot2.png)  
+*Custom HUD displaying medallion status and minimap.*-->
+
+Feel free to fork, star, and contribute! Enjoy enhancing your game development skills with this Witcher-inspired mechanic.
+
