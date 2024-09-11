@@ -25,11 +25,11 @@ For any queries or discussions regarding the project, feel free to open an issue
 ## Acknowledgments
 - Special thanks to the Unreal Engine community for guidance and resources.
 - Hat tip to anyone who's code was used as inspiration.
-
+ <!--
 ## Screenshots and Demos
 ![Medallion Effect](screenshot1.png)  
 *The Witcher Medallion in action, detecting magic.*
-<!--
+
 ![HUD Setup](screenshot2.png)  
 *Custom HUD displaying medallion status and minimap.*-->
 
