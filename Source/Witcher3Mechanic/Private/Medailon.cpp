@@ -46,7 +46,7 @@ void AMedailon::DetectNearbyThreats()
         Sphere
     );
 
-    DrawDebugSphere(GetWorld(), MedallionLocation, DetectionRadius, 5.0, FColor::Red, false, 1.0f); // Debugovací koule
+    DrawDebugSphere(GetWorld(), MedallionLocation, DetectionRadius, 50.0, FColor::Red, false, 1.0f); // Debugovací koule
 
     if (bIsOverlapping)
     {
@@ -61,11 +61,13 @@ void AMedailon::DetectNearbyThreats()
                     TriggerMedallionEffectEnemy();
                     break;
                 } 
-                if (OverlappedActor->ActorHasTag("Magic"))
+               /*
+               if (OverlappedActor->ActorHasTag("Magic"))
                 {
                     TriggerMedallionEffectMagic();
                     break;
                 }
+               */ 
             }
         }
     }
