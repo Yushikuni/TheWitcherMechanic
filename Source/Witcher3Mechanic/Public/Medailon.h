@@ -18,7 +18,7 @@ class WITCHER3MECHANIC_API AMedailon : public AActor
 public:
 	//Making a detection radius
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Medailon")
-	float DetectionRadius = 5.0f;
+	float DetectionRadius = 50.0f;
 
 	// Sets default values for this actor's properties
 	AMedailon();

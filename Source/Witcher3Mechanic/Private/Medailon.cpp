@@ -6,6 +6,13 @@
 #include "GameFramework/Actor.h"
 #include "Engine/World.h"
 #include "DrawDebugHelpers.h"
+#include "Components/PrimitiveComponent.h"
+#include "CollisionShape.h"
+#include "Engine/EngineTypes.h"
+#include "CollisionQueryParams.h"
+#include "PhysicsEngine/PhysicsSettings.h"
+#include "Engine/OverlapResult.h"
+
 
 // Sets default values
 AMedailon::AMedailon()
@@ -33,14 +40,13 @@ void AMedailon::Tick(float DeltaTime)
 void AMedailon::DetectNearbyThreats()
 {
     FVector MedallionLocation = GetActorLocation();
-    TArray<FHitResult> HitResults;  // Zmìna na TArray<FHitResult>
+    TArray<FOverlapResult> OverlapResult;
     FCollisionShape Sphere = FCollisionShape::MakeSphere(DetectionRadius);
 
     // Raycasting nebo Overlap pro detekci objektù v blízkosti
-    bool bIsOverlapping = GetWorld()->SweepMultiByChannel(
-        HitResults,  // Zde používáme HitResults, což je správný typ
+    bool bIsOverlapping = GetWorld()->OverlapMultiByChannel(
+        OverlapResult,  // Zde používáme HitResults, což je správný typ
         MedallionLocation,
-        MedallionLocation + FVector(0, 0, 1),  // Smìr je nulový, protože chceme detekci kolem
         FQuat::Identity,
         ECC_Pawn,  // Mùžeš používat rùzné kolizní kanály
         Sphere
@@ -50,30 +56,19 @@ void AMedailon::DetectNearbyThreats()
 
     if (bIsOverlapping)
     {
-        for (auto& Result : HitResults)
+        for (const FOverlapResult& Result : OverlapResult)
         {
             AActor* OverlappedActor = Result.GetActor();
-            if (OverlappedActor)
+            if (OverlappedActor && OverlappedActor->ActorHasTag("Enemy"))
             {
-                if (OverlappedActor->ActorHasTag("Enemy"))
-                {
-                    // Spustit efekt medailonu
-                    TriggerMedallionEffectEnemy();
-                    break;
-                } 
-               /*
-               if (OverlappedActor->ActorHasTag("Magic"))
-                {
-                    TriggerMedallionEffectMagic();
-                    break;
-                }
-               */ 
+                TriggerMedallionEffectEnemy();
+                break;
             }
         }
     }
 }
 // Own category for loging
-DEFINE_LOG_CATEGORY_STATIC(LogMedailon, Log, All);
+//DEFINE_LOG_CATEGORY_STATIC(LogMedailon, Log, All);
 
 void AMedailon::TriggerMedallionEffect()
 {
