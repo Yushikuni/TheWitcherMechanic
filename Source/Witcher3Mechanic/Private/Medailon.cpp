@@ -19,7 +19,7 @@ AMedailon::AMedailon()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	DetectionRadius = 500.f;
+	DetectionRadius = 50000.f;
 }
 
 
@@ -28,6 +28,7 @@ void AMedailon::BeginPlay()
 {
 	Super::BeginPlay();
     OwningWitcher = Cast<ATheWitcher>(GetOwner());
+   
 }
 
 // Called every frame
@@ -39,7 +40,13 @@ void AMedailon::Tick(float DeltaTime)
 
 void AMedailon::DetectNearbyThreats()
 {
-    FVector MedallionLocation = GetActorLocation();
+    if (!OwningWitcher)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("OwningWitcher is null!"));
+        return;  // Pokud je OwningWitcher null, vynech detekci
+    }
+    FVector WitcherLocation = OwningWitcher->GetActorLocation();
+    FVector MedallionLocation = WitcherLocation;
     TArray<FOverlapResult> OverlapResult;
     FCollisionShape Sphere = FCollisionShape::MakeSphere(DetectionRadius);
 
@@ -52,7 +59,7 @@ void AMedailon::DetectNearbyThreats()
         Sphere
     );
 
-    DrawDebugSphere(GetWorld(), MedallionLocation, DetectionRadius, 50.0, FColor::Red, false, 1.0f); // Debugovací koule
+    DrawDebugSphere(GetWorld(), WitcherLocation, DetectionRadius, 50.0, FColor::Red, false, 1.0f); // Debugovací koule
 
     if (bIsOverlapping)
     {
