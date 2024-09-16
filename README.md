@@ -20,7 +20,7 @@ Contributions are welcome! Please fork the project, create a new branch for your
 This project is licensed under the GNU General Public License v3.0. For more details, see the [LICENSE](LICENSE) file in the repository.
 
 ## Contact
-For any queries or discussions regarding the project, feel free to open an issue in the repository or contact [me](mailto:your-email@example.com).
+For any queries or discussions regarding the project, feel free to open an issue in the repository or contact [me](mailto:huskvenimrah@gmail.com).
 
 ## Acknowledgments
 - Special thanks to the Unreal Engine community for guidance and resources.
