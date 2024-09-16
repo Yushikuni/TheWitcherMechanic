@@ -37,11 +37,14 @@ For any queries or discussions regarding the project, feel free to open an issue
 - Polish the user interface for the mechanic's feedback.
 
 ## Screenshots and Demos
-![Medallion Effect](https://www.youtube.com/watch?v=B-D9ZV23wd8)
-*The Witcher Medallion in action, detecting enemy.*
+<a href="https://www.youtube.com/watch?v=B-D9ZV23wd8">
+  <img src="https://github.com/user-attachments/assets/8e5ac202-be9c-4b25-9465-b4607f3e5c83" alt="Medallion Effect" width="300" height="300">
+</a><br>
+*The Witcher Medallion in action, detecting enemy.*<br>
+<br><br>
 <!--
 ![HUD Setup](screenshot2.png)  
 *Custom HUD displaying medallion status and minimap.*-->
 
-Feel free to fork, star, and contribute! Enjoy enhancing your game development skills with this Witcher-inspired mechanic.
+<b>Feel free to fork, star, and contribute! Enjoy enhancing your game development skills with this Witcher-inspired mechanic.</b>
 
