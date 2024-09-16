@@ -3,6 +3,11 @@
 ## Project Description
 This project showcases a dynamic game mechanic inspired by "The Witcher" series. It includes a reactive Witcher Medallion that detects nearby enemies or magic within the game environment. This mechanic is designed using Unreal Engine 5, demonstrating both Blueprints and C++ implementations.
 
+## Features
+- Detection of enemies within a certain radius.
+- Visual feedback (debug spheres) to indicate the detection range.
+- Integration with Unreal Engine 5’s physics and collision system.
+
 ## Installation
 To get started with this project:
 1. Ensure you have Unreal Engine 5 installed on your system. You can download it from the [Epic Games Launcher](https://www.unrealengine.com/en-US/download).
@@ -25,11 +30,16 @@ For any queries or discussions regarding the project, feel free to open an issue
 ## Acknowledgments
 - Special thanks to the Unreal Engine community for guidance and resources.
 - Hat tip to anyone who's code was used as inspiration.
- <!--
-## Screenshots and Demos
-![Medallion Effect](screenshot1.png)  
-*The Witcher Medallion in action, detecting magic.*
 
+## TODO
+- Implement magic object detection.
+- Add sound and particle effects to the medallion's response.
+- Polish the user interface for the mechanic's feedback.
+
+## Screenshots and Demos
+![Medallion Effect](https://www.youtube.com/watch?v=B-D9ZV23wd8)
+*The Witcher Medallion in action, detecting enemy.*
+<!--
 ![HUD Setup](screenshot2.png)  
 *Custom HUD displaying medallion status and minimap.*-->
 
