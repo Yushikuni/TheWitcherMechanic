@@ -7,7 +7,7 @@
 #include "BaseAIController.generated.h"
 
 /**
- * 
+ * Base AI Custom controller as a class for other specific AI behavior such as patrolling, Attack, Runner
  */
 UCLASS()
 class WITCHER3MECHANIC_API ABaseAIController : public AAIController
