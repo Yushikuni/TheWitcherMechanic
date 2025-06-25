@@ -1,50 +1,72 @@
-# The Witcher Mechanic
+# 🧿 The Witcher Mechanic
 
-## Project Description
-This project showcases a dynamic game mechanic inspired by "The Witcher" series. It includes a reactive Witcher Medallion that detects nearby enemies or magic within the game environment. This mechanic is designed using Unreal Engine 5, demonstrating both Blueprints and C++ implementations.
+A dynamic Unreal Engine 5 mechanic inspired by *The Witcher* series, featuring a reactive medallion system that detects nearby magic and enemies in real time.
 
-## Features
-- Detection of enemies within a certain radius.
-- Visual feedback (debug spheres) to indicate the detection range.
-- Integration with Unreal Engine 5’s physics and collision system.
+> This system demonstrates gameplay programming using both Blueprints and C++ in Unreal Engine 5.
 
-## Installation
-To get started with this project:
-1. Ensure you have Unreal Engine 5 installed on your system. You can download it from the [Epic Games Launcher](https://www.unrealengine.com/en-US/download).
-2. Clone the repository to your local machine: ``git clone https://github.com/Yushikuni/TheWitcherMechanic.git``
-3. Open the project in Unreal Engine 5 by navigating to the project folder and opening the `.uproject` file.
+---
 
-## Usage
-- The medallion can be triggered by pressing the "Y" key, which toggles its sensitivity settings between detecting enemies and detecting magical objects.
-- To integrate this mechanic into your own game, reference the `AMedailon` and `ATheWitcher` classes in your game scripts or blueprints.
+## 🎮 Features
 
-## Contributing
-Contributions are welcome! Please fork the project, create a new branch for your contribution, and submit a pull request.
+- 🔍 Enemy & magic detection within a defined radius
+- 🧿 Medallion toggles between enemy/magic sensing
+- 🛠️ Blueprint–C++ hybrid logic using `AMedailon` and `ATheWitcher` classes
+- 🎯 Visual debug feedback (spheres)
+- 🔊 Extendable for sound, particles, UI integration
 
-## License
-This project is licensed under the GNU General Public License v3.0. For more details, see the [LICENSE](LICENSE) file in the repository.
+---
+## 🛠 Requirements
 
-## Contact
-For any queries or discussions regarding the project, feel free to open an issue in the repository or contact [me](mailto:huskvenimrah@gmail.com).
+- [Unreal Engine 5](https://www.unrealengine.com/en-US/download) installed
+- Windows or macOS system with UE5 support
+- Basic understanding of Blueprints and/or C++
 
-## Acknowledgments
-- Special thanks to the Unreal Engine community for guidance and resources.
-- Hat tip to anyone who's code was used as inspiration.
+---
 
-## TODO
-- Implement magic object detection.
-- Add sound and particle effects to the medallion's response.
-- Polish the user interface for the mechanic's feedback.
+## 🚀 Installation
 
-## Screenshots and Demos
+1. Clone the repo:
+```bash
+git clone https://github.com/Yushikuni/TheWitcherMechanic.git
+```
+2. Open the .uproject file in Unreal Engine 5 <br/>
+3. Press Play to test the mechanic in the level <br/>
+
+## ⌨️ Controls & Usage
+| Key    | Action                                          |
+| ------ | ----------------------------------------------- |
+| `Y`    | Toggle medallion detection mode (enemy ↔ magic) |
+| `Play` | Start detection system in the editor preview    |
+
+
+To integrate the system into your project, reference:
+- AMedailon (detection logic) <br/>
+- ATheWitcher (player actor & interactions) <br/>
+
+## 📸 Screenshots & Demo
 <a href="https://www.youtube.com/watch?v=B-D9ZV23wd8">
   <img src="https://github.com/user-attachments/assets/8e5ac202-be9c-4b25-9465-b4607f3e5c83" alt="Medallion Effect" width="300" height="300">
-</a><br>
-*The Witcher Medallion in action, detecting enemy.*<br>
+</a><br> Click to watch the demo on YouTube.
+*The Witcher Medallion in action, detecting an enemy.*<br>
 <br><br>
-<!--
-![HUD Setup](screenshot2.png)  
-*Custom HUD displaying medallion status and minimap.*-->
 
-<b>Feel free to fork, star, and contribute! Enjoy enhancing your game development skills with this Witcher-inspired mechanic.</b>
+
+## 🔮 TODO
+- [ ] Add detection for magical objects
+- [ ] Integrate sound FX & particles
+- [ ] Polish UI feedback (e.g. HUD icon)
+- [ ] Add cooldown system for medallion pulses
+
+
+## 🙋‍♀️ Author
+Created by Květuše Husáková (Yushikuni)
+Feel free to fork, star ⭐, and use this mechanic in your own gameplay prototypes!
+
+📬 Contact: huskvenimrah@gmail.com <br/>
+💼 Portfolio: husakova-kvetuse-portfolio.firebaseapp.com
+
+## 💡 Acknowledgements
+The Unreal Engine dev community ❤️ <br/>
+Gameplay inspiration from The Witcher 1 & 3 <br/>
+Assets used under fair-use/educational license <br/>
 
