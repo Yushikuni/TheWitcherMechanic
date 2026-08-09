@@ -10,15 +10,25 @@
 
 class ATheWitcher;
 
+UENUM(BlueprintType)
+enum class EDetectionMode : uint8
+{
+	Enemy,
+	Magic
+};
+
 UCLASS()
 class WITCHER3MECHANIC_API AMedailon : public AActor
 {
 	GENERATED_BODY()
 
 public:
-	//Making a detection radius
+	// Making a detection radius
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Medailon")
-	float DetectionRadius = 50.0f;
+	float DetectionRadius = 1500.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Medailon")
+	EDetectionMode CurrentMode = EDetectionMode::Enemy; // default = Enemy
 
 	// Sets default values for this actor's properties
 	AMedailon();
@@ -35,10 +45,13 @@ public:
 	UFUNCTION()
 	void DetectNearbyThreats();
 
+	UFUNCTION()
+	void ToggleDetectionMode();
+
 	UPROPERTY()
-	ATheWitcher* OwningWitcher;
+	ATheWitcher *OwningWitcher;
 
 	void TriggerMedallionEffect();
-	void TriggerMedallionEffectEnemy();
-	void TriggerMedallionEffectMagic();
+	void TriggerMedallionEffectEnemy(float SignalStrenght);
+	void TriggerMedallionEffectMagic(float SignalStrenght);
 };

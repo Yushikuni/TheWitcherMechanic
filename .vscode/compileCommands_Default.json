@@ -1,0 +1,106 @@
+[
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Private\\BaseAIController.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Private\\Enemy.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Private\\Magic.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Private\\Medailon.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Private\\TheWitcher.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Public\\BaseAIController.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Public\\Enemy.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Public\\Magic.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Public\\Medailon.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Public\\TheWitcher.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Witcher3Mechanic.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Witcher3Mechanic.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\Source\\Witcher3Mechanic\\Witcher3Mechanic.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Atlan\\OneDrive\\Herni-vyvoj\\Witcher3Mechanic\\.vscode\\compileCommands_Default\\Witcher3Mechanic.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	}
+]

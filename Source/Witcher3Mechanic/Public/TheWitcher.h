@@ -20,12 +20,12 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void SetupPlayerInputComponent(class UInputComponent *PlayerInputComponent) override;
 
 	// Add medailon to class
 	UPROPERTY(EditAnywhere, Category = "Medailon")
@@ -33,8 +33,8 @@ public:
 
 	// Reference to the spawned medailon actor
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Medailon")
-	AMedailon* SpawnedMedailon;
+	AMedailon *SpawnedMedailon;
 
 	void ActivateMedailon();
-
+	void ToggleMedailonMode();
 };

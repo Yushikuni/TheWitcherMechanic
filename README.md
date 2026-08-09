@@ -32,20 +32,20 @@ A dynamic Unreal Engine 5 mechanic inspired by *The Witcher* series, featuring a
 git clone https://github.com/Yushikuni/TheWitcherMechanic.git
 ```
 
-2. Open the .uproject file in Unreal Engine 5 <br/>
-2. Press Play to test the mechanic in the level <br/>
+1. Open the .uproject file in Unreal Engine 5 
+2. Press Play to test the mechanic in the level 
 
 ## ⌨️ Controls & Usage
 
-| Key    | Action                                          |
-| ------ | ----------------------------------------------- |
+| Key      | Action                                           |
+| -------- | ------------------------------------------------ |
 | `Y`    | Toggle medallion detection mode (enemy ↔ magic) |
-| `Play` | Start detection system in the editor preview    |
+| `Play` | Start detection system in the editor preview     |
 
 To integrate the system into your project, reference:
 
-- AMedailon (detection logic) <br/>
-- ATheWitcher (player actor & interactions) <br/>
+- AMedailon (detection logic) 
+- ATheWitcher (player actor & interactions) 
 
 ## 📸 Screenshots & Demo
 
@@ -53,26 +53,31 @@ To integrate the system into your project, reference:
   <img src="https://github.com/user-attachments/assets/8e5ac202-be9c-4b25-9465-b4607f3e5c83" alt="Medallion Effect" width="300" height="300">
 </a><br> Click to watch the demo on YouTube.
 *The Witcher Medallion in action, detecting an enemy.*<br>
-<br><br>
+OR here: <a href="https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK"/>
 
-## 🔮 TODO
+[](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
-- [ ] Add detection for magical objects
-- [ ] Integrate sound FX & particles
-- [ ] Polish UI feedback (e.g. HUD icon)
-- [ ] Add cooldown system for medallion pulses
+## [🔮 TODO](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+
+- [ Add detection for magical objects](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+- [ Integrate sound FX &amp; particles](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+- [ Polish UI feedback (e.g. HUD icon)](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+- [ Add cooldown system for medallion pulses](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
 <!-- AUTHOR: START -->
-## 🙋‍♀️ Author
 
-Created by Květuše Husáková (Yushikuni)
-Feel free to fork, star ⭐, and use this mechanic in your own gameplay prototypes!
+## [🙋‍♀️ Author](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
-📬 Contact: <huskvenimrah@gmail.com> <br/>
-💼 Portfolio: husakova-kvetuse-portfolio.firebaseapp.com
+[Created by Květuše Husáková (Yushikuni)
+Feel free to fork, star ⭐, and use this mechanic in your own gameplay prototypes!](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+
+[📬 Contact: &lt;huskvenimrah@gmail.com&gt; 
+](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+
 <!-- AUTHOR:END-->
-## 💡 Acknowledgements
 
-The Unreal Engine dev community ❤️ <br/>
-Gameplay inspiration from The Witcher 1 & 3 <br/>
-Assets used under fair-use/educational license <br/>
+## [💡 Acknowledgements](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+
+[The Unreal Engine dev community ❤️ 
+Gameplay inspiration from The Witcher 1 &amp; 3 
+Assets used under fair-use/educational license ](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
