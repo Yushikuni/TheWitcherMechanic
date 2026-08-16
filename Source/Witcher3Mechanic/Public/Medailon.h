@@ -30,6 +30,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Medailon")
 	EDetectionMode CurrentMode = EDetectionMode::Enemy; // default = Enemy
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Medailon")
+	float CooldownDuration = 0.5f;
+
 	// Sets default values for this actor's properties
 	AMedailon();
 
@@ -52,4 +55,7 @@ public:
 	ATheWitcher *OwningWitcher;
 	void TriggerMedallionEffectEnemy(float SignalStrenght);
 	void TriggerMedallionEffectMagic(float SignalStrenght);
+
+private:
+	float LastPulseTime = -999.0f;
 };

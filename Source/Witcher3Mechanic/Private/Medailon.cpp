@@ -35,6 +35,14 @@ void AMedailon::Tick(float DeltaTime)
 
 void AMedailon::DetectNearbyThreats()
 {
+
+    float CurrentTime = GetWorld()->GetTimeSeconds();
+    if (CurrentTime - LastPulseTime < CooldownDuration)
+    {
+        return; // ještě čeká na cooldown
+    }
+    LastPulseTime = CurrentTime;
+
     if (!OwningWitcher)
     {
         UE_LOG(LogTemp, Warning, TEXT("OwningWitcher is null!"));
