@@ -69,19 +69,16 @@ OR here: <a href="https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK"/>
 - [X] Distance-based detection signal (medallion strength scales with proximity)
 - [X] Enemy/Magic detection mode toggle
 - [ ] Sound FX & particle feedback (currently debug text only)
-- [ ] Cooldown system for medallion pulses
-- [ ] Package as a proper UE5 Plugin with public A
+- [X] Cooldown system for medallion pulses
+- [X] Package as a proper UE5 Plugin with public A
 
 <!-- AUTHOR: START -->
 
-## [🙋‍♀️ Author](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+## 🙋‍♀️ Author
+Created by Yushikuni
+Feel free to fork, star ⭐, and use this mechanic in your own gameplay prototypes!
 
-[Created by Yushikuni
-Feel free to fork, star ⭐, and use this mechanic in your own gameplay prototypes!](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
-
-[📬 Contact: &lt;huskvenimrah@gmail.com&gt;
-](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
-
+📬 Contact: huskvenimrah@gmail.com
 <!-- AUTHOR:END-->
 
 ## [💡 Acknowledgements](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
