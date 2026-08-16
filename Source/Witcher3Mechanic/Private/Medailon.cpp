@@ -94,20 +94,22 @@ void AMedailon::DetectNearbyThreats()
 // Own category for loging
 // DEFINE_LOG_CATEGORY_STATIC(LogMedailon, Log, All);
 
-void AMedailon::TriggerMedallionEffect()
-{
-    UE_LOG(LogTemp, Log, TEXT("Medallion Detects a Threat!"));
-}
-
 void AMedailon::TriggerMedallionEffectEnemy(float SignalStrenght)
 {
     UE_LOG(LogTemp, Log, TEXT("Medallion Detects a Enemy Threat! Strength: %f"), SignalStrenght);
     // Sem později: intenzita vibrace/zvuku/vizuálu podle SignalStrength
+    FColor DebugColor = FLinearColor::LerpUsingHSV(FLinearColor::Yellow, FLinearColor::Red, SignalStrenght).ToFColor(true);
+    FString Text = FString::Printf(TEXT("ENEMY! Strength: %.2f"), SignalStrenght);
+    DrawDebugString(GetWorld(), GetActorLocation() + FVector(0, 0, 100), Text, nullptr, DebugColor, 1.0f, true);
 }
 
 void AMedailon::TriggerMedallionEffectMagic(float SignalStrenght)
 {
     UE_LOG(LogTemp, Log, TEXT("Medallion Detects a MAGIC Threat! Strength: %f"), SignalStrenght);
+
+    FColor DebugColor = FLinearColor::LerpUsingHSV(FLinearColor::Blue, FLinearColor(1.0f, 0.0f, 1.0f), SignalStrenght).ToFColor(true);
+    FString Text = FString::Printf(TEXT("MAGIC! Strength: %.2f"), SignalStrenght);
+    DrawDebugString(GetWorld(), GetActorLocation() + FVector(0, 0, 100), Text, nullptr, DebugColor, 1.0f, true);
 }
 
 void AMedailon::ToggleDetectionMode()

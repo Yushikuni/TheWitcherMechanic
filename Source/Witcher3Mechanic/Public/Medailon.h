@@ -50,8 +50,6 @@ public:
 
 	UPROPERTY()
 	ATheWitcher *OwningWitcher;
-
-	void TriggerMedallionEffect();
 	void TriggerMedallionEffectEnemy(float SignalStrenght);
 	void TriggerMedallionEffectMagic(float SignalStrenght);
 };
