@@ -1,8 +1,8 @@
 # 🧿 The Witcher Mechanic
 
-A dynamic Unreal Engine 5 mechanic inspired by *The Witcher* series, featuring a reactive medallion system that detects nearby magic and enemies in real time.
+A distance-based detection mechanic for Unreal Engine 5, inspired by the medallion system from *The Witcher* series. The medallion senses nearby enemies or magic within a radius, with signal strength scaling by proximity — the closer the threat, the stronger the signal.
 
-> This system demonstrates gameplay programming using both Blueprints and C++ in Unreal Engine 5.
+> Built to be a clean, reusable detection system — not tied to any specific game project. Fork it, extend it, or drop it into your own prototype.
 
 ---
 
@@ -32,20 +32,27 @@ A dynamic Unreal Engine 5 mechanic inspired by *The Witcher* series, featuring a
 git clone https://github.com/Yushikuni/TheWitcherMechanic.git
 ```
 
-1. Open the .uproject file in Unreal Engine 5 
-2. Press Play to test the mechanic in the level 
+2. Open the .uproject file in Unreal Engine 5
+3. Press Play to test the mechanic in the level
+
+---
+
+
 
 ## ⌨️ Controls & Usage
 
 | Key      | Action                                           |
 | -------- | ------------------------------------------------ |
-| `Y`    | Toggle medallion detection mode (enemy ↔ magic) |
-| `Play` | Start detection system in the editor preview     |
+| `Y`    | Trigger medallion detection pulse                |
+| `Tab`  | Toggle detection mode (enemy ↔ magic)           |
+| `Play` | Start the detection system in the editor preview |
 
-To integrate the system into your project, reference:
+To integrate the system into your own project, reference:
 
-- AMedailon (detection logic) 
-- ATheWitcher (player actor & interactions) 
+- `AMedailon` — detection logic, signal strength calculation, mode toggle
+- `ATheWitcher` — player actor that owns and activates the medallion
+
+---
 
 ## 📸 Screenshots & Demo
 
@@ -55,29 +62,30 @@ To integrate the system into your project, reference:
 *The Witcher Medallion in action, detecting an enemy.*<br>
 OR here: <a href="https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK"/>
 
-[](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+[[](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
-## [🔮 TODO](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+## 🔮 TODO
 
-- [ Add detection for magical objects](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
-- [ Integrate sound FX &amp; particles](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
-- [ Polish UI feedback (e.g. HUD icon)](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
-- [ Add cooldown system for medallion pulses](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+- [X] Distance-based detection signal (medallion strength scales with proximity)
+- [X] Enemy/Magic detection mode toggle
+- [ ] Sound FX & particle feedback (currently debug text only)
+- [ ] Cooldown system for medallion pulses
+- [ ] Package as a proper UE5 Plugin with public A
 
 <!-- AUTHOR: START -->
 
 ## [🙋‍♀️ Author](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
-[Created by Květuše Husáková (Yushikuni)
+[Created by Yushikuni
 Feel free to fork, star ⭐, and use this mechanic in your own gameplay prototypes!](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
-[📬 Contact: &lt;huskvenimrah@gmail.com&gt; 
+[📬 Contact: &lt;huskvenimrah@gmail.com&gt;
 ](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
 <!-- AUTHOR:END-->
 
 ## [💡 Acknowledgements](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
-[The Unreal Engine dev community ❤️ 
-Gameplay inspiration from The Witcher 1 &amp; 3 
+[The Unreal Engine dev community ❤️
+Gameplay inspiration from The Witcher 1 &amp; 3
 Assets used under fair-use/educational license ](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
