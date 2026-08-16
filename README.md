@@ -62,7 +62,7 @@ To integrate the system into your own project, reference:
 *The Witcher Medallion in action, detecting an enemy.*<br>
 OR here: <a href="https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK"/>
 
-[[](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
+[https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK](https://youtu.be/lN4yqSardvc?si=5PvGqolBlZs6KkZK)
 
 ## 🔮 TODO
 
