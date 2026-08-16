@@ -11,13 +11,7 @@
 	],
 	"settings": {
 		"typescript.tsc.autoDetect": "off",
-		"npm.autoDetect": "off",
-		"files.exclude": {
-			"**/*.rpyc": true,
-			"**/*.rpa": true,
-			"**/*.rpymc": true,
-			"**/cache/": true
-		}
+		"npm.autoDetect": "off"
 	},
 	"extensions": {
 		"recommendations": [
