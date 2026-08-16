@@ -75,7 +75,7 @@ void AMedailon::DetectNearbyThreats()
         for (const FOverlapResult &Result : OverlapResult)
         {
             AActor *OverlappedActor = Result.GetActor();
-            if (OverlappedActor && OverlappedActor != OwningWitcher && OverlappedActor->ActorHasTag("Enemy"))
+            if (OverlappedActor && OverlappedActor != OwningWitcher && OverlappedActor->ActorHasTag(TagToCheck))
             {
                 float Distance = FVector::Dist(WitcherLocation, OverlappedActor->GetActorLocation());
                 float SignalStrenght = FMath::Clamp(1.0f - (Distance / DetectionRadius), 0.0f, 1.0f);
